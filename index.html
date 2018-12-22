@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="main.css">
     <title>국수나무</title>
+
 </head>
 <body>
     <div id = "header">
@@ -20,14 +21,103 @@
                     <li>메뉴2</li>
                     <li>메뉴3</li>
                 </ul></div>
+             <!--탭메뉴 -->   
             <div class="row h80">
+                <div class="container">
                  
+                  <ul class="tabs">
+                    <li class="tab-link current" data-tab="tab-1">음료</li>
+                    <li class="tab-link" data-tab="tab-2">간식</li>
+                    <li class="tab-link" data-tab="tab-3">밥</li>
+                    <li class="tab-link" data-tab="tab-4">카페</li>
+                  </ul>
+                 
+                    <div id="drink-tap" class="tab-content current">
+                        <!-- 음료수 첫번째 줄 -->
+                        <ul>
+                            <li>
+                                <p id="">이미지</p>
+                                <p id="drink_tap1_name">이름</p>
+                                <p class="DrinkPrice" id="drink_tap1_price">300</p>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <p id="">이미지</p>
+                                <p id="drink_tap2_name">이름</p>
+                                <p class="DrinkPrice" id="drink_tap2_price">150</p>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <p id="">이미지</p>
+                                <p id="drink_tap3_name">이름</p>
+                                <p class="DrinkPrice" id="drink_tap3_price">200</p>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <p id="">이미지</p>
+                                <p id="drink_tap4_name">이름</p>
+                                <p class="DrinkPrice" id="drink_tap4_price">120</p>
+                            </li>
+                        </ul>
+                        <!-- //음료수 첫번째 줄 -->        
+
+                        <!-- 음료수 두번째 줄 -->
+                        <ul>
+                            <li>
+                                <p id="">이미지</p>
+                                <p id="drink_tap5_name">이름</p>
+                                <p class="DrinkPrice" id="drink_tap5_price">230</p>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <p id="">이미지</p>
+                                <p id="drink_tap6_name">이름</p>
+                                <p class="DrinkPrice" id="drink_tap6_price">190</p>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <p id="">이미지</p>
+                                <p id="drink_tap7_name">이름</p>
+                                <p class="DrinkPrice" id="drink_tap7_price">160</p>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <p id="">이미지</p>
+                                <p id="drink_tap8_name">이름</p>
+                                <p class="DrinkPrice id="drink_tap8_price">100</p>
+                            </li>
+                        </ul>
+                        <!-- //음료수 두번째 줄 -->        
+
+
+                    </div>
+                    <div id="tab-2" class="tab-content">
+                    2222222 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum qui autem voluptatem iure voluptate cum omnis, at in obcaecati placeat sequi error, facere saepe beatae voluptatum corporis possimus! Rem, similique!
+                    </div>
+                    <div id="tab-3" class="tab-content">
+                    33333 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium consequuntur beatae ducimus. Cumque dicta autem laboriosam, vel minus beatae ipsam molestias blanditiis facere. Aliquid itaque dolorem, nihil a dignissimos repellendus.
+                    </div>
+                    <div id="tab-3" class="tab-content">
+                    444444 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium consequuntur beatae ducimus. Cumque dicta autem laboriosam, vel minus beatae ipsam molestias blanditiis facere. Aliquid itaque dolorem, nihil a dignissimos repellendus.
+                    </div>
+                    <div id="tab-4" class="tab-content">
+                    444444 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium consequuntur beatae ducimus. Cumque dicta autem laboriosam, vel minus beatae ipsam molestias blanditiis facere. Aliquid itaque dolorem, nihil a dignissimos repellendus.
+                    </div>   
+                 
+                </div>                   
 
             </div>
+            <!-- // 탭메늎 -->
         </div>
         <div class="col w30">
                 <div class="row h20">row</div>
-
+                    
                 <div class="row h80">
                     <div class="row h70">
                             계산영역
@@ -40,4 +130,20 @@
             </div>
     </div>
 </body>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script>
+    $(document).ready(function(){
+   
+  $('ul.tabs li').click(function(){
+    var tab_id = $(this).attr('data-tab');
+ 
+    $('ul.tabs li').removeClass('current');
+    $('.tab-content').removeClass('current');
+ 
+    $(this).addClass('current');
+    $("#"+tab_id).addClass('current');
+  })
+ 
+})
+</script>
 </html>
