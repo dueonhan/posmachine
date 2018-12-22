@@ -14,9 +14,7 @@
     height: 100%;
   }
   
-  .row {
-    border: 1px dotted blue;
-  }
+ 
   
   #container {
     border: 1px dotted black;
@@ -31,9 +29,7 @@
   .h20 { height: 20%; }
   .h80 { height: 80%; }
 
-  .top_menu {
-      border: 1px solid #ccc;
-  }
+ 
   .top_menu li {
       float: left;
       width : 25%;
@@ -42,127 +38,68 @@
       
   }
 
-  .tab_menu {
-    float: bottom;
-    width : 25%;
-  }
-
-  .detail_menu {
-      float:left;
-      width : 100%;
-  }
-  .detail_menu li{
-      list-style: none;
-      float: left;
-      width: 25%;
-      height: 300px;
-      border: 1px solid red;
-  }
-
-  .detail_menu li span {
-      display: block;
-      font-size: 21px;
-      text-align: center;
-      border: 1px solid red;
-  }
 
   .top_menu {
     float : left;
 }
 
-    body{
-    margin-top: 100px;
-    font-family: 'Trebuchet MS', serif;
-    line-height: 1.6
-  }
-  .container{
-    width: 500px;
-    margin: 0 auto;
-  }
-   
+
    
    
   ul.tabs{
     margin: 0px;
     padding: 0px;
     list-style: none;
+    float: bottom;
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    
   }
   ul.tabs li{
     background: none;
-    color: #222;
     display: inline-block;
-    padding: 10px 15px;
     cursor: pointer;
-  }
-   
-  ul.tabs li.current{
-    background: #ededed;
-    color: #222;
-  }
-   
-  .tab-content{
-    display: none;
-    background: #ededed;
-    padding: 15px;
-  }
-   
-  .tab-content.current{
-    display: inherit;
+    width: 24%;
+    border: 1px solid #ccc;
+    background-color: #ddd;
+    color: #999;
+    padding: 10px;
+    text-align : center;
   }
 
-  #drink-tap ul li{
+  ul.tabs li.current {
+      background-color: #fff;
+      color: #000;
+      border-bottom: none;
+      font-weight: bold;
+  }
+   
+  .tab-content ul {
+     padding: 2px;
+  }
+   
+  .menuArea {
     list-style: none;
+    width: 23%;
+    margin: 5px;
     display: inline-block;
-    
-    width:24%;
     border:1px solid #ccc;
-  }
+}
+
+ 
+
       
+  .tab-content ul li p{
+    font-size: 16px;
+    text-align: center;
+    font-weight: bold;
+  }
 
-      body{
-      margin-top: 100px;
-      font-family: 'Trebuchet MS', serif;
-      line-height: 1.6
-    }
-    .container{
-      width: 500px;
-      margin: 0 auto;
-    }
-     
-     
-     
-    ul.tabs{
-      margin: 0px;
-      padding: 0px;
-      list-style: none;
-    }
-    ul.tabs li{
-      background: none;
-      color: #222;
-      display: inline-block;
-      padding: 10px 15px;
-      cursor: pointer;
-    }
-     
-    ul.tabs li.current{
-      background: #ededed;
-      color: #222;
-    }
-     
-    .tab-content{
-      display: none;
-      background: #ededed;
-      padding: 15px;
-    }
-     
-    .tab-content.current{
-      display: inherit;
-    }
-
-    #drink-tap ul li{
-      list-style: none;
-      display: inline-block;
+  .tab-content ul li p.drinkPrice {
+    font-size: 21px;
+  }
    
-      width:24%;
-      border:1px solid #ccc;
-    }
+ 
