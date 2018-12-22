@@ -113,7 +113,56 @@
   #drink-tap ul li{
     list-style: none;
     display: inline-block;
-    float:left;
+    
     width:24%;
     border:1px solid #ccc;
   }
+      
+
+      body{
+      margin-top: 100px;
+      font-family: 'Trebuchet MS', serif;
+      line-height: 1.6
+    }
+    .container{
+      width: 500px;
+      margin: 0 auto;
+    }
+     
+     
+     
+    ul.tabs{
+      margin: 0px;
+      padding: 0px;
+      list-style: none;
+    }
+    ul.tabs li{
+      background: none;
+      color: #222;
+      display: inline-block;
+      padding: 10px 15px;
+      cursor: pointer;
+    }
+     
+    ul.tabs li.current{
+      background: #ededed;
+      color: #222;
+    }
+     
+    .tab-content{
+      display: none;
+      background: #ededed;
+      padding: 15px;
+    }
+     
+    .tab-content.current{
+      display: inherit;
+    }
+
+    #drink-tap ul li{
+      list-style: none;
+      display: inline-block;
+   
+      width:24%;
+      border:1px solid #ccc;
+    }
