@@ -12,32 +12,110 @@
 
     </div>
         <div id="container">
-            
         <div class="col w70">
             <div class="row h20">
-                <ul class="top_menu">
-                    <li>메뉴1</li>
-                    <li>메뉴2</li>
-                    <li>메뉴3</li>
-                </ul></div>
+                    <ul class="tabs">
+                            <li class="tab-link current" data-tab="tab-1">음료</li>
+                            <li class="tab-link" data-tab="tab-2">간식</li>
+                            <li class="tab-link" data-tab="tab-3">밥</li>
+                            <li class="tab-link" data-tab="tab-4">카페</li>
+                </ul>
+            </div>
             <div class="row h80">
-                 
-
+                    <div id="drink-tap" class="tab-content current">
+                            <!-- 음료수 첫번째 줄 -->
+                            <ul>
+                                <li>
+                                    <p id="">이미지</p>
+                                    <p id="drink_tap1_name">이름</p>
+                                    <p class="DrinkPrice" id="drink_tap1_price">300</p>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <p id="">이미지</p>
+                                    <p id="drink_tap2_name">이름</p>
+                                    <p class="DrinkPrice" id="drink_tap2_price">150</p>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <p id="">이미지</p>
+                                    <p id="drink_tap3_name">이름</p>
+                                    <p class="DrinkPrice" id="drink_tap3_price">200</p>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <p id="">이미지</p>
+                                    <p id="drink_tap4_name">이름</p>
+                                    <p class="DrinkPrice" id="drink_tap4_price">120</p>
+                                </li>
+                            </ul>
+                            <!-- //음료수 첫번째 줄 -->        
+    
+                            <!-- 음료수 두번째 줄 -->
+                            <ul>
+                                <li>
+                                    <p id="">이미지</p>
+                                    <p id="drink_tap5_name">이름</p>
+                                    <p class="DrinkPrice" id="drink_tap5_price">230</p>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <p id="">이미지</p>
+                                    <p id="drink_tap6_name">이름</p>
+                                    <p class="DrinkPrice" id="drink_tap6_price">190</p>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <p id="">이미지</p>
+                                    <p id="drink_tap7_name">이름</p>
+                                    <p class="DrinkPrice" id="drink_tap7_price">160</p>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <p id="">이미지</p>
+                                    <p id="drink_tap8_name">이름</p>
+                                    <p class="DrinkPrice id="drink_tap8_price">100</p>
+                                </li>
+                            </ul>
+                            <!-- //음료수 두번째 줄 -->        
+                        </div>
             </div>
         </div>
         <div class="col w30">
-                <div class="row h20">row</div>
-
+                <div class="row h20" id ="final_menu">row</div>
                 <div class="row h80">
                     <div class="row h70">
-                            계산영역
+                        계산영역
                     </div>
                     <div class="row h30">
-                            주문하기
+                        주문하기
                     </div>
                 </div>
-               
             </div>
     </div>
 </body>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script>
+    $(document).ready(function(){
+   
+  $('ul.tabs li').click(function(){
+    var tab_id = $(this).attr('data-tab');
+ 
+    $('ul.tabs li').removeClass('current');
+    $('.tab-content').removeClass('current');
+ 
+    $(this).addClass('current');
+    $("#"+tab_id).addClass('current');
+  })
+ 
+})
+</script>
+
 </html>

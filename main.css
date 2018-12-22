@@ -32,5 +32,88 @@
   .h80 { height: 80%; }
 
   .top_menu {
-      float : left;
+      border: 1px solid #ccc;
+  }
+  .top_menu li {
+      float: left;
+      width : 25%;
+      list-style: none;
+      border: 1px solid #333;
+      
+  }
+
+  .tab_menu {
+    float: bottom;
+    width : 25%;
+  }
+
+  .detail_menu {
+      float:left;
+      width : 100%;
+  }
+  .detail_menu li{
+      list-style: none;
+      float: left;
+      width: 25%;
+      height: 300px;
+      border: 1px solid red;
+  }
+
+  .detail_menu li span {
+      display: block;
+      font-size: 21px;
+      text-align: center;
+      border: 1px solid red;
+  }
+
+  .top_menu {
+    float : left;
+}
+
+    body{
+    margin-top: 100px;
+    font-family: 'Trebuchet MS', serif;
+    line-height: 1.6
+  }
+  .container{
+    width: 500px;
+    margin: 0 auto;
+  }
+   
+   
+   
+  ul.tabs{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+  }
+  ul.tabs li{
+    background: none;
+    color: #222;
+    display: inline-block;
+    padding: 10px 15px;
+    cursor: pointer;
+  }
+   
+  ul.tabs li.current{
+    background: #ededed;
+    color: #222;
+  }
+   
+  .tab-content{
+    display: none;
+    background: #ededed;
+    padding: 15px;
+  }
+   
+  .tab-content.current{
+    display: inherit;
+  }
+
+  #drink-tap ul li{
+    list-style: none;
+    display: inline-block;
+    float:left;
+    width:24%;
+    border:1px solid #ccc;
   }
